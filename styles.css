@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth; /* Habilita a rolagem suave */
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,15 +9,40 @@ body {
 }
 
 header {
-    background: #333;
+    background: #cfcece;
+    color: #000000;
+    padding: 0.2rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+nav.portifolio {
     color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0 15px;
+}
+
+.portifolio span {
+    color: #fff;
+    padding: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: right;
 }
 
 nav ul li {
@@ -23,45 +51,105 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 section {
-    padding: 2rem 1rem;
+    padding: 1rem 2rem;
+    min-height: 100vh; /* Ocupa a tela inteira */
+    display: flex;
+    color: #000;
 }
 
+/* Aplicando a imagem de fundo em cada seção */
 #home {
-    background: #f4f4f4;
-    text-align: center;
+    background-image: url('Fotos-home/7.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    position: relative;
+    text-align: left; /* Centraliza o texto */
+}
+#home h1 {
+    position: absolute;
+    top: 8%; /* Posiciona o <h1> a 20% do topo da tela */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    font-size: 16rem;
+    line-height: 1.4;
+}
+#home h2 {
+    position: absolute;
+    top: 17%; /* Posiciona o <h1> a 20% do topo da tela */
+    left: 28%;
+    transform: translateX(-75%); /* Centraliza horizontalmente */
+    font-size: 2.5rem;
 }
 
-#about, #projects, #resume, #contact {
-    background: #fff;
+#home p {
+    position: absolute;
+    top: 75%; /* Posiciona o <h1> a 20% do topo da tela */
+    left: 60%;
+    transform: translateX(-20%); /* Centraliza horizontalmente */
+    font-size: 1.5rem;
 }
 
-h1, h2, h3 {
-    margin-bottom: 1rem;
+#about {
+    background-image: url('Fotos-home/9.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 1.1rem;
 }
 
+#projects {
+    background-image: url('Fotos-home/7.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 1.1rem;
+}
 .project {
     border: 1px solid #ddd;
     padding: 1rem;
     margin-bottom: 1rem;
 }
-
-.project img {
-    max-width: 100%;
-    height: auto;
+.project h3 {
+    margin-left: 5%;
 }
-
+.project p {
+    margin-left: 5%;
+}
+.project img {
+    max-width: 40%;
+    height: auto;
+    margin-left: 5%;
+}
+#resume {
+    background-image: url('Fotos-home/9.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+#contact {
+    background-image: url('Fotos-home/7.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 1.1rem;
+}
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 0.2rem 0;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
