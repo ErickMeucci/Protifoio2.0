@@ -84,9 +84,9 @@ section {
 #home h2 {
     position: absolute;
     top: 17%; /* Posiciona o <h1> a 20% do topo da tela */
-    left: 28%;
+    left: 30%;
     transform: translateX(-75%); /* Centraliza horizontalmente */
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 #home p {
