@@ -345,9 +345,11 @@ section {
 }
 
 /* Estilo das setas */
-#projects .arrow {
+/* Estilo para as setas */
+#projects .arrow_left,
+#projects .arrow_right {
     position: absolute;
-    top: 265%;
+    top: 50%; /* Ajusta para centralizar verticalmente */
     transform: translateY(-50%);
     font-size: 3rem;
     cursor: pointer;
@@ -356,13 +358,15 @@ section {
     z-index: 1; /* Para garantir que as setas estejam acima do conteúdo */
 }
 
-#projects .arrow.left {
-    left: 10px; /* Ajuste conforme necessário */
+#projects .arrow_left {
+    left: 20px; /* Ajuste conforme necessário */
 }
 
-#projects .arrow.right {
-    right: 10px; /* Ajuste conforme necessário */
+#projects .arrow_right {
+    right: 20px; /* Ajuste conforme necessário */
 }
+
+
 
 #projects .arrow:hover {
     color: #000;
@@ -694,7 +698,7 @@ footer {
     }
     #projects .arrow {
         position: absolute;
-        top: 265%;
+        top: 50%;
         transform: translateY(-50%);
         font-size: 2rem;
         cursor: pointer;
