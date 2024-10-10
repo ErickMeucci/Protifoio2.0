@@ -672,16 +672,7 @@ footer {
         transform: translateX(-75%); /* Centraliza horizontalmente */
         font-size: 1.4rem;
     }
-    #projects .arrow {
-        position: absolute;
-        top: 350%;
-        transform: translateY(-50%);
-        font-size: 2rem;
-        cursor: pointer;
-        color: #333;
-        transition: color 0.3s;
-        z-index: 1; /* Para garantir que as setas estejam acima do conteúdo */
-    }
+
 }
 @media (max-width: 450px){
     .about-content img {
@@ -696,14 +687,5 @@ footer {
         margin-bottom: 1rem;
         color: #000000;
     }
-    #projects .arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 2rem;
-        cursor: pointer;
-        color: #333;
-        transition: color 0.3s;
-        z-index: 1; /* Para garantir que as setas estejam acima do conteúdo */
-    }
+
 }
