@@ -670,7 +670,7 @@ footer {
     }
     #projects .arrow {
         position: absolute;
-        top: 300%;
+        top: 350%;
         transform: translateY(-50%);
         font-size: 2rem;
         cursor: pointer;
