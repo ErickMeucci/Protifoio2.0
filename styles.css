@@ -353,7 +353,7 @@ section {
     transform: translateY(-50%);
     font-size: 3rem;
     cursor: pointer;
-    color: #333;
+    color: #000000;
     transition: color 0.3s;
     z-index: 1; /* Para garantir que as setas estejam acima do conteúdo */
 }
