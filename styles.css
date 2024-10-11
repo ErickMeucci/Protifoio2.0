@@ -245,6 +245,7 @@ section {
     color: #000000;
 }
 #projects {
+    position: relative;
     background-image: url('Fotos-home/7.png');
     background-size: cover;
     background-position: center;
@@ -328,8 +329,8 @@ section {
 .project a {
     display: inline-block;
     padding: 0.7rem 1.5rem;
-    background-color: #fff;
-    color: #000;
+    background-color: #000000;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1rem;
@@ -340,31 +341,42 @@ section {
 
 /* Efeito hover no botão */
 .project a:hover {
-    background-color: #c5c5c5;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /* Estilo das setas */
 /* Estilo para as setas */
+/* Estilo para as setas */
+/* Estilo para as setas */
 #projects .arrow_left,
 #projects .arrow_right {
     position: absolute;
-    top: 50%; /* Ajusta para centralizar verticalmente */
-    transform: translateY(-50%);
+    top: 50%; /* Centraliza verticalmente na seção de projetos */
+    transform: translateY(-50%); /* Ajusta para centralizar corretamente */
     font-size: 3rem;
     cursor: pointer;
-    color: #000000;
+    color: #333;
     transition: color 0.3s;
-    z-index: 1; /* Para garantir que as setas estejam acima do conteúdo */
+    z-index: 1; /* Garante que as setas fiquem acima do conteúdo */
 }
 
 #projects .arrow_left {
-    left: 20px; /* Ajuste conforme necessário */
+    left: 0; /* Fixa na lateral esquerda */
+    margin-left: 20px; /* Ajuste para dar um espaçamento da borda esquerda */
 }
 
 #projects .arrow_right {
-    right: 20px; /* Ajuste conforme necessário */
+    right: 0; /* Fixa na lateral direita */
+    margin-right: 20px; /* Ajuste para dar um espaçamento da borda direita */
 }
+
+#projects .arrow_left:hover,
+#projects .arrow_right:hover {
+    color: #555; /* Muda a cor ao passar o mouse */
+}
+
+
 
 
 
@@ -550,7 +562,18 @@ footer {
         border-radius: 50%; /* Deixa as imagens dos ícones circulares */
         transition: transform 0.5s ease;
     }
-
+    #projects .arrow_left,
+    #projects .arrow_right {
+        position: absolute;
+        top: 50%; /* Centraliza verticalmente na seção de projetos */
+        transform: translateY(-50%); /* Ajusta para centralizar corretamente */
+        font-size: 2rem;
+        cursor: pointer;
+        color: #333;
+        transition: color 0.3s;
+        z-index: 1; /* Garante que as setas fiquem acima do conteúdo */
+    }
+    
 
 }
 @media (max-width: 800px){
@@ -686,6 +709,17 @@ footer {
         font-size: 1.4rem; /* Aumenta o tamanho do título */
         margin-bottom: 1rem;
         color: #000000;
+    }
+    #projects .arrow_left,
+    #projects .arrow_right {
+        position: absolute;
+        top: 50%; /* Centraliza verticalmente na seção de projetos */
+        transform: translateY(-50%); /* Ajusta para centralizar corretamente */
+        font-size: 1rem;
+        cursor: pointer;
+        color: #333;
+        transition: color 0.3s;
+        z-index: 1; /* Garante que as setas fiquem acima do conteúdo */
     }
 
 }

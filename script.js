@@ -1,6 +1,6 @@
 const projects = document.querySelectorAll('.project'); // Seleciona todos os projetos
-const leftArrow = document.querySelector('.arrow.left'); // Seta esquerda
-const rightArrow = document.querySelector('.arrow.right'); // Seta direita
+const leftArrow = document.querySelector('.arrow_left'); // Seta esquerda
+const rightArrow = document.querySelector('.arrow_right'); // Seta direita
 let currentProject = 0; // Índice do projeto ativo
 
 // Função para atualizar a exibição dos projetos
